@@ -7,14 +7,39 @@ html {
 *::after {
     box-sizing: inherit;
 }
+body {
+    background-color: $light;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    line-height: 1.5;
+
+}
+h1 {
+    font-weight: 600;
+    font-size: 18px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 12px;
+}
+h3 {
+    font-size: 10px;
+}
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
 }
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+section {
+    margin-left: auto;
+    margin-right: auto;
+@include mq(desktop) {
+    display: flex;
+    width: 595px;
+}
 }

@@ -1,0 +1,8 @@
+.general {
+    background-color: $blue;
+    color: $white;
+    font-size: 10px;
+    @include mq(desktop) {
+        width: 210px;
+    }
+}
