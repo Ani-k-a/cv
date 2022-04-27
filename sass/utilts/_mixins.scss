@@ -1,3 +1,4 @@
+/* MEDIA QUERIES*/
 @mixin mq($range) {
     $mobile: 480px;
     $tablet: 768px;
@@ -49,5 +50,21 @@
         screen and (min-resolution: 2dppx) {
             @content;
         }
+    }
+}
+
+// MIX fonts
+@mixin font-contact ($fw, $fz, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fz;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+// Mixin for Product grid
+@mixin card ($num) {
+
+    &:nth-child(#{$num})::before {
+        @content
     }
 }

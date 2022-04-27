@@ -1,0 +1,18 @@
+.section {
+    background-color: $white;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(mobile-only) {
+    max-width: $mobile;
+    }
+    @include mq(tablet) {
+        width: $tablet;
+    }
+    @include mq(desktop) {
+        display: flex;
+        flex-direction: row-reverse;
+        width: $desktop;
+    }
+}
+
