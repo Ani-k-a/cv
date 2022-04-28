@@ -3,16 +3,17 @@
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
     margin-left: auto;
     margin-right: auto;
+    display: flex;
+    flex-direction: column-reverse;
     @include mq(mobile-only) {
     max-width: $mobile;
     }
     @include mq(tablet) {
+        flex-direction: row-reverse;
         width: $tablet;
     }
     @include mq(desktop) {
-        display: flex;
-        flex-direction: row-reverse;
-        width: $desktop;
+        width: 900px;
     }
 }
 

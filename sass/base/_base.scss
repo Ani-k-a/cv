@@ -11,22 +11,27 @@ body {
     background-color: $light;
     color: $gray;
     font-family: 'Poppins', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
 }
 h1 {
     margin: 0;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 24px;
 }
 h2 {
     margin: 0;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 18px;
 }
 h3 {
     margin: 0;
-    font-size: 16px;
+    font-size: 14px;
 }
 p{
     margin: 0;
@@ -40,4 +45,19 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+.title {
+    margin-bottom: 10px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }

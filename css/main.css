@@ -13,25 +13,31 @@ body {
   background-color: #E5E5E5;
   color: #878787;
   font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 h1 {
   margin: 0;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 24px;
 }
 
 h2 {
   margin: 0;
   font-weight: 600;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 h3 {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 p {
@@ -50,11 +56,30 @@ img {
   height: auto;
 }
 
+.title {
+  margin-bottom: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .section {
   background-color: #ffffff;
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -65,15 +90,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .section {
+    flex-direction: row-reverse;
     width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .section {
-    display: flex;
-    flex-direction: row-reverse;
-    width: 1200px;
+    width: 900px;
   }
 }
 
@@ -87,22 +111,87 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .general {
+    width: 30%;
+  }
+}
+
+.general_description {
+  color: #C3C2C2;
+}
+
+.general__list {
+  list-style: inside;
+}
+
+.contact__item {
+  align-items: center;
+  padding-left: 10px;
+  height: 30px;
+  display: flex;
+  border-radius: 4px;
+  background-color: #E5E5E5;
+  color: #233A5F;
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact__link:hover, .contact__link:focus {
+  color: #878787;
+}
+
+.honor__description {
+  color: #C3C2C2;
+}
+
+.social__list {
+  display: flex;
+}
+
+.social__icon:hover, .social__icon:focus {
+  fill: #C3C2C2;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.social__icon {
+  fill: #ffffff;
+}
+
 .expertise {
   padding: 30px;
 }
 
-.title {
-  color: #233A5F;
-  margin-bottom: 10px;
+@media screen and (min-width: 768px) {
+  .expertise {
+    width: 70%;
+  }
 }
 
-.title::after {
+.expertise__title {
+  color: #233A5F;
+}
+
+.expertise__title::after {
   content: ' ';
   display: block;
   margin-bottom: 15px;
   background-color: #233A5F;
-  width: 60px;
+  width: 55px;
   height: 3px;
+}
+
+.projects__item:hover, projects__item:focus {
+  color: #2A2A2A;
+}
+
+.projects__item:not(:last-child) {
+  margin-bottom: 5px;
 }
 
 .education__item {

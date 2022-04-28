@@ -2,4 +2,43 @@
     padding: 30px 15px;
     background-color: $blue;
     color: $white;
+    @include mq(tablet) {
+        width: 30%;
+    }
+}
+.general_description {
+    color: $lightgray;
+}
+.general__list {
+    list-style: inside;
+}
+.contact__item {
+    align-items: center;
+    padding-left: 10px;
+    height: 30px;
+    display: flex;
+    border-radius: 4px;
+    background-color: $light;
+    color: $blue;
+}
+.contact__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.contact__link:hover, .contact__link:focus {
+    color: $gray;
+}
+.honor__description {
+    color: $lightgray;
+}
+.social__list {
+    display: flex;
+}
+.social__icon:hover, .social__icon:focus {
+    fill: $lightgray;
+}
+.social__item:not(:last-child) {
+    margin-right: 15px;
+}
+.social__icon {
+    fill: $white;
 }
