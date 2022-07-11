@@ -12,7 +12,7 @@ html {
 body {
   background-color: #E5E5E5;
   color: #878787;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 12px;
   line-height: 1.5;
 }
@@ -81,20 +81,17 @@ img {
   display: flex;
   flex-direction: column-reverse;
 }
-
 @media screen and (max-width: 767.98px) {
   .section {
     max-width: 480px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .section {
     flex-direction: row-reverse;
     width: 768px;
   }
 }
-
 @media screen and (min-width: 1200px) {
   .section {
     width: 900px;
@@ -106,15 +103,32 @@ img {
 }
 
 .general {
-  padding: 30px 15px;
+  padding: 35px 15px;
   background-color: #233A5F;
   color: #ffffff;
 }
-
 @media screen and (min-width: 768px) {
   .general {
     width: 30%;
   }
+}
+
+.general__box {
+  background-color: #C4C4C4;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.general__image {
+  border-radius: 50%;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .general_description {
@@ -164,9 +178,8 @@ img {
 }
 
 .expertise {
-  padding: 30px;
+  padding: 35px;
 }
-
 @media screen and (min-width: 768px) {
   .expertise {
     width: 70%;
@@ -178,7 +191,7 @@ img {
 }
 
 .expertise__title::after {
-  content: ' ';
+  content: " ";
   display: block;
   margin-bottom: 15px;
   background-color: #233A5F;
@@ -203,7 +216,6 @@ img {
 }
 
 .education__date {
-  margin-right: 25px;
   width: 105px;
   display: flex;
 }
@@ -250,6 +262,9 @@ img {
 .work__title {
   margin-bottom: 5px;
   color: #2A2A2A;
+  margin: 0;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .work__description {
@@ -260,5 +275,4 @@ img {
 .work__break {
   margin-left: 5px;
   margin-right: 5px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

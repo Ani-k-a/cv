@@ -1,5 +1,5 @@
 .expertise {
-    padding: 30px;
+    padding: 35px;
     @include mq(tablet) {
         width: 70%;
     }
@@ -30,7 +30,6 @@ margin-bottom: 5px;
 
 // в мобильной версии сьезжают поля
 .education__date {
-    margin-right: 25px;
     width: 105px;
     display: flex;
 }
@@ -73,6 +72,9 @@ margin-bottom: 5px;
 .work__title {
     margin-bottom: 5px;
     color: $darkblue;
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
 }
 .work__description {
     margin-bottom: 5px;

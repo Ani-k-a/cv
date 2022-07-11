@@ -1,11 +1,28 @@
 .general {
-    padding: 30px 15px;
+    padding: 35px 15px;
     background-color: $blue;
     color: $white;
     @include mq(tablet) {
         width: 30%;
     }
 }
+.general__box {
+    background-color: $fotoBackground;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.general__image {
+    border-radius: 50%;
+    flex: none;
+    order: 0;
+   flex-grow: 0;
+}
+
 .general_description {
     color: $lightgray;
 }
