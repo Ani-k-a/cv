@@ -30,8 +30,15 @@ margin-bottom: 5px;
 
 // в мобильной версии сьезжают поля
 .education__date {
-    width: 105px;
+    width: 25%;
     display: flex;
+}
+
+.education__box {
+    width: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+
 }
 
 .education__icon {
@@ -39,7 +46,11 @@ margin-bottom: 5px;
     margin-top: 5px;
     margin-left: 10px;
     margin-right: 10px;
+
 }
+// .education__place { 
+
+// }
 .education__title {
     margin-bottom: 5px;
     color: $darkblue;
@@ -62,6 +73,10 @@ margin-bottom: 5px;
     margin-right: 25px;
     width: 60px;
     height: 60px;
+}
+.work__box {display: flex;
+    flex-wrap: nowrap;
+    width: 75%;
 }
 .work__icon {
     fill: $light;
