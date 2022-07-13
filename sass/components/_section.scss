@@ -4,12 +4,12 @@
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    
     @include mq(mobile-only) {
     max-width: $mobile;
     }
     @include mq(tablet) {
-        flex-direction: row-reverse;
         width: $tablet;
     }
     @include mq(desktop) {
