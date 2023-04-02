@@ -199,7 +199,14 @@ img {
   height: 3px;
 }
 
-.projects__item:hover, projects__item:focus {
+.projects__link {
+  font-size: 14px;
+  font-weight: 700;
+  color: #2A2A2A;
+}
+
+.projects__link:hover,
+.projects__link:focus {
   color: #2A2A2A;
 }
 
